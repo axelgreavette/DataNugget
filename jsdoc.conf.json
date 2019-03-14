@@ -1,0 +1,18 @@
+{
+    "opts": {
+        "destination": "./docs",
+        "template": "./node_modules/foodoc/template"
+    },
+    "templates": {
+        "systemName": "DataNugget",
+        "systemSummary": "Store data in easily 'lil nuggets",
+        "systemColor": "#4B0082",
+        "copyright": "DataNugget Copyright &copy; 2019 Axel Greavette",
+        "includeDate": true,
+        "cleverLinks": false,
+        "monospaceLinks": false,
+        "outputSourceFiles": false,
+        "outputSourcePath": false,
+        "dateFormat": "MMMM Do YYYY, h:mm:ss a"
+    }
+}

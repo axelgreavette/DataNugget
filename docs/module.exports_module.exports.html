@@ -1,10 +1,9 @@
-<!-- start:readme.hbs -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-		<title>DataNugget</title>
+		<title>exports</title>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -41,7 +40,7 @@
 				}
 			</style>
 		<script type="text/javascript">
-			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"Do MMM YYYY","systemName":"DataNugget","systemSummary":"Store data in easily 'lil nuggets","systemLogo":"","systemColor":"#4B0082","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"DataNugget Copyright &copy; 2019 Axel Greavette","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":true,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
+			window.TEMPLATE_OPTIONS = {"includeDate":true,"dateFormat":"MMMM Do YYYY, h:mm:ss a","systemName":"DataNugget","systemSummary":"Store data in easily 'lil nuggets","systemLogo":"","systemColor":"#4B0082","navMembers":[{"kind":"class","title":"Classes","summary":"All documented classes."},{"kind":"external","title":"Externals","summary":"All documented external members."},{"kind":"global","title":"Globals","summary":"All documented globals."},{"kind":"mixin","title":"Mixins","summary":"All documented mixins."},{"kind":"interface","title":"Interfaces","summary":"All documented interfaces."},{"kind":"module","title":"Modules","summary":"All documented modules."},{"kind":"namespace","title":"Namespaces","summary":"All documented namespaces."},{"kind":"tutorial","title":"Tutorials","summary":"All available tutorials."}],"footer":"","copyright":"DataNugget Copyright &copy; 2019 Axel Greavette","linenums":true,"collapseSymbols":true,"inverseNav":true,"inlineNav":false,"outputSourceFiles":false,"sourceRootPath":null,"disablePackagePath":true,"outputSourcePath":false,"showTableOfContents":true,"showAccessFilter":true,"analytics":null,"methodHeadingReturns":true,"sort":"linenum, longname, version, since","search":true,"favicon":null,"stylesheets":[],"scripts":[],"monospaceLinks":false,"cleverLinks":false};
 			window.DOCLET_TOC_ENABLED = true;
 			window.DOCLET_AFILTER_ENABLED = false;
 		</script>
@@ -86,32 +85,88 @@
 	</header>
 	<!-- end:navbar.hbs -->		<div class="page-header">
 			<div class="container">
-				<span class="kind">readme</span>
-				<h1><span class="name">DataNugget</span></h1>
-				<div class="summary"><p>Store data in easily 'lil nuggets</p></div>			</div>
+				<span class="kind">class</span>
+				<h1><span class="name">exports</span></h1>
+			</div>
 		</div>
 	<div class="container content">
 		<div class="row">
 			<div class="col-md-9 main-content">
-		<section class="readme-section">
-			<article><p align=center>
-    <h1>DataNugget</h1>
-</p>
-
-<hr>
-<p>Parse DataNugget <code>.nugget</code> files in JavaScript.</p>
-<h2>To Add</h2><ul>
-<li>[x] Boolean type</li>
-<li>[x] String type</li>
-<li>[x] Integer type</li>
-<li>[x] Read from .nugget file</li>
-<li>[x] Read from chunk</li>
-<li>[ ] Write from JSON to .nugget</li>
-<li>[ ] Array type</li>
-</ul>
-<hr>
-<p><a href="https://axelgreavette.github.io/DataNugget/out">Documentation</a></p></article>
-		</section>
+						<ol class="breadcrumb">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="list_class.html">Classes</a></li>
+							<li class="active">exports</li>
+						</ol>
+					<section>
+							<dl class="symbol primary">
+								<dt class="symbol-title class collapsible-symbol expanded">
+			<h2 class="class"><span class="signature-new">new&nbsp;</span><span class="name">exports</span><span class="signature-params">()</span><span class="signature-type"></span></h2>
+</dt>
+<dd class="symbol-details class  collapsible-symbol expanded" style="max-height: 9999px;">
+	<div class="symbol-details-inner">
+			<div class="callout callout-primary"><h5>Description</h5>		<div class="description">DataNugget class constructor</div>
+			</div>			<div class="callout callout-info">
+				<h5>Properties</h5>
+				<table class="params table table-striped">
+					<thead>
+					<tr>
+							<th>Name</th>
+						<th>Type</th>
+						<th class="last">Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+								<td><code>regexObj</code></td>
+							<td><span class="param-type">regex</span></td>
+							<td class="last">
+									Regex for gathering titles of DataNugget properties
+							</td>
+						</tr>
+						<tr>
+								<td><code>regexName</code></td>
+							<td><span class="param-type">regex</span></td>
+							<td class="last">
+									Regex for gathering DataNugget property names
+							</td>
+						</tr>
+						<tr>
+								<td><code>regexString</code></td>
+							<td><span class="param-type">regex</span></td>
+							<td class="last">
+									Regex for gathering DataNugget strings
+							</td>
+						</tr>
+						<tr>
+								<td><code>regexBool</code></td>
+							<td><span class="param-type">regex</span></td>
+							<td class="last">
+									Regex for gathering DataNugget booleans
+							</td>
+						</tr>
+						<tr>
+								<td><code>regexInt</code></td>
+							<td><span class="param-type">regex</span></td>
+							<td class="last">
+									Regex for gathering DataNugget integers
+							</td>
+						</tr>
+						<tr>
+								<td><code>regexComment</code></td>
+							<td><span class="param-type">regex</span></td>
+							<td class="last">
+									Regex for gathering DataNugget comments
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+	</div>
+</dd>
+							</dl>
+							<article class="secondary">
+							</article>
+					</section>
 			</div>
 				<div class="col-md-3 side-content">
 					<nav class="toc hidden-print hidden-sm hidden-xs"></nav>
@@ -120,7 +175,7 @@
 	</div>
 	<footer>
 				<div class="copyright">DataNugget Copyright &copy; 2019 Axel Greavette</div>
-			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on 14th Mar 2019 using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
+			<div class="generated-by">Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on March 14th 2019, 12:14:33 am using the <a href="https://github.com/steveush/foodoc">FooDoc template</a>.</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
@@ -147,4 +202,3 @@
 	
 </body>
 </html>
-<!-- end:readme.hbs -->
