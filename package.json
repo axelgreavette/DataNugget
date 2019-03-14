@@ -11,7 +11,8 @@
   },
   "devDependencies": {
     "foodoc": "0.0.9",
-    "jsdoc": "^3.5.5"
+    "jsdoc": "^3.5.5",
+    "semantic-release": "^15.13.3"
   },
   "scripts": {
     "test": "jest",
@@ -21,6 +22,10 @@
     "Data",
     "Storage"
   ],
+  "repository": {
+    "url": "https://github.com/axelgreavette/DataNugget.git",
+    "type": "git"
+  },
   "author": "Axel Greavette",
   "license": "ISC"
 }
