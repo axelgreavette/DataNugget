@@ -1,0 +1,9 @@
+{
+    "teplates": {
+        "systemName": "DataNugget",
+        "systemSummary": "Store data in easily 'lil nuggets",
+        "systemColor": "#4B0082",
+        "copyright": "DataNugget Copyright &copy; 2019 Axel Greavette",
+        "includeDate": true
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "data-nugget",
+  "version": "1.0.0",
+  "description": "Store nuggets of data easily",
+  "main": "src/DataNugget.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "jest": "^24.5.0"
+  },
+  "devDependencies": {
+    "foodoc": "0.0.9",
+    "jsdoc": "^3.5.5"
+  },
+  "scripts": {
+    "test": "jest",
+    "build-docs": "jsdoc -c ./conf.json -t ./node_modules/foodoc/template -R README.md -r ."
+  },
+  "keywords": [
+    "Data",
+    "Storage"
+  ],
+  "author": "Axel Greavette",
+  "license": "ISC"
+}
