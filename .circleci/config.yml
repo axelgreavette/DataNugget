@@ -4,11 +4,13 @@ jobs:
     docker:
       - image: circleci/node:8
     steps:
-      # Configure your test steps here (checkout, npm install, cache management, tests etc...)
+      - checkout
+      - run: npm install
+      - run: npm test
 
-  test_jest:
+  test_v6:
     docker:
-      - image: circleci/node:9
+      - image: circleci/node:6
     steps:
       - checkout
       - run: npm install
@@ -30,8 +32,8 @@ workflows:
     # Run the test jobs first, then the release only when all the test jobs are successful
     jobs:
       - test_v8
-      - test_jest
+      - test_v6
       - release:
           requires:
             - test_v8
-            - test_jest
+            - test_v6
