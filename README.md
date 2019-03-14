@@ -18,4 +18,4 @@ Parse DataNugget `.nugget` files in JavaScript.
 
 ---
 
-[Documentation](https://axelgreavette.github.io/DataNugget/out)
+[Documentation](https://axelgreavette.github.io/DataNugget/docs)
