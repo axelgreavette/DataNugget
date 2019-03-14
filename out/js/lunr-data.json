@@ -40,14 +40,14 @@
     "documentStore": {
       "store": {
         "index.html": [
-          "base",
-          "bootstrap",
-          "foodoc",
-          "handlebar",
+          "data",
+          "datanugget",
+          "easili",
           "index",
-          "jsdoc3",
+          "lil",
+          "nugget",
           "readm",
-          "templat"
+          "store"
         ],
         "global.html": [
           "document",
@@ -73,17 +73,44 @@
     "tokenStore": {
       "root": {
         "docs": {},
-        "b": {
+        "d": {
           "docs": {},
           "a": {
             "docs": {},
-            "s": {
+            "t": {
               "docs": {},
-              "e": {
+              "a": {
                 "docs": {
                   "index.html": {
                     "ref": "index.html",
                     "tf": 14
+                  }
+                },
+                "n": {
+                  "docs": {},
+                  "u": {
+                    "docs": {},
+                    "g": {
+                      "docs": {},
+                      "g": {
+                        "docs": {},
+                        "e": {
+                          "docs": {},
+                          "t": {
+                            "docs": {
+                              "index.html": {
+                                "ref": "index.html",
+                                "tf": 600
+                              },
+                              "module.exports_module.exports.html": {
+                                "ref": "module.exports_module.exports.html",
+                                "tf": 16.666666666666664
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -91,24 +118,25 @@
           },
           "o": {
             "docs": {},
-            "o": {
+            "c": {
               "docs": {},
-              "t": {
+              "u": {
                 "docs": {},
-                "s": {
+                "m": {
                   "docs": {},
-                  "t": {
+                  "e": {
                     "docs": {},
-                    "r": {
+                    "n": {
                       "docs": {},
-                      "a": {
-                        "docs": {},
-                        "p": {
-                          "docs": {
-                            "index.html": {
-                              "ref": "index.html",
-                              "tf": 14
-                            }
+                      "t": {
+                        "docs": {
+                          "global.html": {
+                            "ref": "global.html",
+                            "tf": 35
+                          },
+                          "list_class.html": {
+                            "ref": "list_class.html",
+                            "tf": 35
                           }
                         }
                       }
@@ -119,50 +147,88 @@
             }
           }
         },
-        "f": {
+        "e": {
           "docs": {},
-          "o": {
+          "a": {
             "docs": {},
-            "o": {
+            "s": {
               "docs": {},
-              "d": {
+              "i": {
                 "docs": {},
-                "o": {
+                "l": {
                   "docs": {},
-                  "c": {
+                  "i": {
                     "docs": {
                       "index.html": {
                         "ref": "index.html",
-                        "tf": 600
+                        "tf": 14
                       }
                     }
                   }
                 }
               }
             }
-          }
-        },
-        "h": {
-          "docs": {},
-          "a": {
+          },
+          "x": {
             "docs": {},
-            "n": {
+            "p": {
               "docs": {},
-              "d": {
+              "o": {
                 "docs": {},
-                "l": {
+                "r": {
                   "docs": {},
-                  "e": {
-                    "docs": {},
-                    "b": {
+                  "t": {
+                    "docs": {
+                      "module.exports_module.exports.html": {
+                        "ref": "module.exports_module.exports.html",
+                        "tf": 700
+                      }
+                    },
+                    "s": {
                       "docs": {},
-                      "a": {
+                      "#": {
                         "docs": {},
-                        "r": {
-                          "docs": {
-                            "index.html": {
-                              "ref": "index.html",
-                              "tf": 14
+                        "m": {
+                          "docs": {},
+                          "o": {
+                            "docs": {},
+                            "d": {
+                              "docs": {},
+                              "u": {
+                                "docs": {},
+                                "l": {
+                                  "docs": {},
+                                  "e": {
+                                    "docs": {},
+                                    ".": {
+                                      "docs": {},
+                                      "e": {
+                                        "docs": {},
+                                        "x": {
+                                          "docs": {},
+                                          "p": {
+                                            "docs": {},
+                                            "o": {
+                                              "docs": {},
+                                              "r": {
+                                                "docs": {},
+                                                "t": {
+                                                  "docs": {
+                                                    "module.exports_module.exports.html": {
+                                                      "ref": "module.exports_module.exports.html",
+                                                      "tf": 100
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
                             }
                           }
                         }
@@ -194,24 +260,72 @@
             }
           }
         },
-        "j": {
+        "l": {
           "docs": {},
-          "s": {
+          "i": {
             "docs": {},
-            "d": {
+            "l": {
+              "docs": {
+                "index.html": {
+                  "ref": "index.html",
+                  "tf": 14
+                }
+              }
+            },
+            "s": {
               "docs": {},
-              "o": {
+              "t": {
+                "docs": {
+                  "list_class.html": {
+                    "ref": "list_class.html",
+                    "tf": 110
+                  }
+                },
+                ":": {
+                  "docs": {},
+                  "c": {
+                    "docs": {},
+                    "l": {
+                      "docs": {},
+                      "a": {
+                        "docs": {},
+                        "s": {
+                          "docs": {},
+                          "s": {
+                            "docs": {
+                              "list_class.html": {
+                                "ref": "list_class.html",
+                                "tf": 1300
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "n": {
+          "docs": {},
+          "u": {
+            "docs": {},
+            "g": {
+              "docs": {},
+              "g": {
                 "docs": {},
-                "c": {
-                  "3": {
+                "e": {
+                  "docs": {},
+                  "t": {
                     "docs": {
                       "index.html": {
                         "ref": "index.html",
                         "tf": 14
                       }
                     }
-                  },
-                  "docs": {}
+                  }
                 }
               }
             }
@@ -237,90 +351,19 @@
             }
           }
         },
-        "t": {
+        "s": {
           "docs": {},
-          "e": {
+          "t": {
             "docs": {},
-            "m": {
+            "o": {
               "docs": {},
-              "p": {
+              "r": {
                 "docs": {},
-                "l": {
-                  "docs": {},
-                  "a": {
-                    "docs": {},
-                    "t": {
-                      "docs": {
-                        "index.html": {
-                          "ref": "index.html",
-                          "tf": 14
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "d": {
-          "docs": {},
-          "o": {
-            "docs": {},
-            "c": {
-              "docs": {},
-              "u": {
-                "docs": {},
-                "m": {
-                  "docs": {},
-                  "e": {
-                    "docs": {},
-                    "n": {
-                      "docs": {},
-                      "t": {
-                        "docs": {
-                          "global.html": {
-                            "ref": "global.html",
-                            "tf": 35
-                          },
-                          "list_class.html": {
-                            "ref": "list_class.html",
-                            "tf": 35
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "a": {
-            "docs": {},
-            "t": {
-              "docs": {},
-              "a": {
-                "docs": {},
-                "n": {
-                  "docs": {},
-                  "u": {
-                    "docs": {},
-                    "g": {
-                      "docs": {},
-                      "g": {
-                        "docs": {},
-                        "e": {
-                          "docs": {},
-                          "t": {
-                            "docs": {
-                              "module.exports_module.exports.html": {
-                                "ref": "module.exports_module.exports.html",
-                                "tf": 16.666666666666664
-                              }
-                            }
-                          }
-                        }
-                      }
+                "e": {
+                  "docs": {
+                    "index.html": {
+                      "ref": "index.html",
+                      "tf": 14
                     }
                   }
                 }
@@ -397,119 +440,6 @@
                                 "module.exports_module.exports.html": {
                                   "ref": "module.exports_module.exports.html",
                                   "tf": 16.666666666666664
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "l": {
-          "docs": {},
-          "i": {
-            "docs": {},
-            "s": {
-              "docs": {},
-              "t": {
-                "docs": {
-                  "list_class.html": {
-                    "ref": "list_class.html",
-                    "tf": 110
-                  }
-                },
-                ":": {
-                  "docs": {},
-                  "c": {
-                    "docs": {},
-                    "l": {
-                      "docs": {},
-                      "a": {
-                        "docs": {},
-                        "s": {
-                          "docs": {},
-                          "s": {
-                            "docs": {
-                              "list_class.html": {
-                                "ref": "list_class.html",
-                                "tf": 1300
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
-        "e": {
-          "docs": {},
-          "x": {
-            "docs": {},
-            "p": {
-              "docs": {},
-              "o": {
-                "docs": {},
-                "r": {
-                  "docs": {},
-                  "t": {
-                    "docs": {
-                      "module.exports_module.exports.html": {
-                        "ref": "module.exports_module.exports.html",
-                        "tf": 700
-                      }
-                    },
-                    "s": {
-                      "docs": {},
-                      "#": {
-                        "docs": {},
-                        "m": {
-                          "docs": {},
-                          "o": {
-                            "docs": {},
-                            "d": {
-                              "docs": {},
-                              "u": {
-                                "docs": {},
-                                "l": {
-                                  "docs": {},
-                                  "e": {
-                                    "docs": {},
-                                    ".": {
-                                      "docs": {},
-                                      "e": {
-                                        "docs": {},
-                                        "x": {
-                                          "docs": {},
-                                          "p": {
-                                            "docs": {},
-                                            "o": {
-                                              "docs": {},
-                                              "r": {
-                                                "docs": {},
-                                                "t": {
-                                                  "docs": {
-                                                    "module.exports_module.exports.html": {
-                                                      "ref": "module.exports_module.exports.html",
-                                                      "tf": 100
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
                                 }
                               }
                             }
@@ -616,24 +546,23 @@
       "length": 20
     },
     "corpusTokens": [
-      "base",
-      "bootstrap",
       "class",
       "constructor",
+      "data",
       "datanugget",
       "document",
+      "easili",
       "export",
       "exports#module.export",
-      "foodoc",
       "global",
-      "handlebar",
       "index",
-      "jsdoc3",
+      "lil",
       "list",
       "list:class",
       "module.exports#module.export",
+      "nugget",
       "readm",
-      "templat"
+      "store"
     ],
     "pipeline": [
       "trimmer",
@@ -645,11 +574,11 @@
     "index.html": {
       "id": "index.html",
       "kind": "readme",
-      "title": "FooDoc",
+      "title": "DataNugget",
       "longname": "index",
-      "name": "FooDoc",
+      "name": "DataNugget",
       "tags": "index",
-      "summary": "A Bootstrap and Handlebars based template for JSDoc3.",
+      "summary": "Store data in easily 'lil nuggets",
       "description": "",
       "body": ""
     },
