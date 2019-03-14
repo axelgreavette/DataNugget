@@ -8,14 +8,6 @@ jobs:
       - run: npm install
       - run: npm test
 
-  test_v6:
-    docker:
-      - image: circleci/node:6
-    steps:
-      - checkout
-      - run: npm install
-      - run: npm test
-
   release:
     docker:
       - image: circleci/node:8
@@ -32,8 +24,6 @@ workflows:
     # Run the test jobs first, then the release only when all the test jobs are successful
     jobs:
       - test_v8
-      - test_v6
       - release:
           requires:
             - test_v8
-            - test_v6
