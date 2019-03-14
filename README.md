@@ -1,8 +1,8 @@
-<p align=center>
-    <h1>DataNugget</h1>
-    [![Build Status](https://img.shields.io/circleci/project/github/axelgreavette/DataNugget.svg?style=plastic)](https://circleci.com/axelgreavette/DataNugget)
+<p align=center>DataNugget</p>
 
-</p>
+[![Build Status](https://img.shields.io/circleci/project/github/axelgreavette/DataNugget.svg?style=plastic)](https://circleci.com/axelgreavette/DataNugget)
+
+
 
 ---
 
