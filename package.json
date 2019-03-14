@@ -15,7 +15,7 @@
   },
   "scripts": {
     "test": "jest",
-    "build-docs": "jsdoc -c ./conf.json -t ./node_modules/foodoc/template -R README.md -r ."
+    "build-docs": "jsdoc -c ./conf.json -t ./node_modules/foodoc/template -R README.md -r ./src"
   },
   "keywords": [
     "Data",

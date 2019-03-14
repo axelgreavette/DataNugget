@@ -15,3 +15,7 @@ Parse DataNugget `.nugget` files in JavaScript.
 - [x] Read from chunk
 - [ ] Write from JSON to .nugget
 - [ ] Array type
+
+---
+
+[Documentation](https://axelgreavette.github.io/DataNugget/out)
