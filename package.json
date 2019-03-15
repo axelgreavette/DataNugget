@@ -10,12 +10,19 @@
     "jest": "^24.5.0"
   },
   "devDependencies": {
+    "eslint": "^5.15.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
     "foodoc": "0.0.9",
     "jsdoc": "^3.5.5",
     "semantic-release": "^15.13.3"
   },
   "scripts": {
     "test": "jest",
+    "lint": "node ./node_modules/eslint . --fix",
     "build-docs": "jsdoc -c ./jsdoc.conf.json -R README.md -r ./src"
   },
   "keywords": [

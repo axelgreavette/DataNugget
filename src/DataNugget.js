@@ -10,6 +10,7 @@ module.exports = class DataNugget {
      * @property {regex} regexBool Regex for gathering DataNugget booleans
      * @property {regex} regexInt Regex for gathering DataNugget integers
      * @property {regex} regexComment Regex for gathering DataNugget comments
+     * @property {regex} regexWhiteSpace Regex for detecting whitespaces and new lines
      */
     constructor () {
         this.regexObj = /[^?]*/;
@@ -18,6 +19,7 @@ module.exports = class DataNugget {
         this.regexBool = /(?<=\!)(.+)(?=\!)/g;
         this.regexInt = /(?<=\#)(.+)(?=\#)/g;
         this.regexComment = /&&.*?([\r\n|\n].*?)+&&|&.*/gm;
+        this.regexWhiteSpace = /^\s*$/;
     }
 
     /**
@@ -36,9 +38,9 @@ module.exports = class DataNugget {
         const name = line.match(this.regexName)[0];
         let value;
 
-        if (!!line.match(this.regexString)) value = line.match(this.regexString)[0];
-        else if (!!line.match(this.regexBool)) value = (/true/i).test(line.match(this.regexBool)[0]);
-        else if (!!line.match(this.regexInt)) value = Number(line.match(this.regexInt)[0]);
+        if (line.match(this.regexString)) value = line.match(this.regexString)[0];
+        else if (line.match(this.regexBool)) value = (/true/i).test(line.match(this.regexBool)[0]);
+        else if (line.match(this.regexInt)) value = Number(line.match(this.regexInt)[0]);
 
         output[name] = value;
 
@@ -70,18 +72,18 @@ module.exports = class DataNugget {
             const lines = data.split(/\n|\;/);
 
             for(const line of lines) {
-                if (line.match(/^\s*$/)) continue;
+                if (line.match(this.regexWhiteSpace)) continue;
 
                 name = line.match(this.regexName);
                 output[name] = name;
 
-                if (!!line.match(this.regexString)) output[name] = line.match(this.regexString)[0];
-                else if (!!line.match(this.regexBool)) output[name] = (/true/i).test(line.match(this.regexBool)[0]);
-                else if (!!line.match(this.regexInt)) output[name] = Number(line.match(this.regexInt)[0]);
-            };
+                if (line.match(this.regexString)) output[name] = line.match(this.regexString)[0];
+                else if (line.match(this.regexBool)) output[name] = (/true/i).test(line.match(this.regexBool)[0]);
+                else if (line.match(this.regexInt)) output[name] = Number(line.match(this.regexInt)[0]);
+            }
             
             cb(output);
-        })
+        });
     }
 
     /**
@@ -107,20 +109,20 @@ module.exports = class DataNugget {
         const lines = data.split(/\n|\;/);
 
         for(const line of lines) {
-            if (line.match(/^\s*$/)) continue;
+            if (line.match(this.regexWhiteSpace)) continue;
 
             name = line.match(this.regexName);
             output[name] = name;
 
-            if (!!line.match(this.regexString)) output[name] = line.match(this.regexString)[0];
-            else if (!!line.match(this.regexBool)) output[name] = (/true/i).test(line.match(this.regexBool)[0]);
-            else if (!!line.match(this.regexInt)) output[name] = Number(line.match(this.regexInt)[0]);
+            if (line.match(this.regexString)) output[name] = line.match(this.regexString)[0];
+            else if (line.match(this.regexBool)) output[name] = (/true/i).test(line.match(this.regexBool)[0]);
+            else if (line.match(this.regexInt)) output[name] = Number(line.match(this.regexInt)[0]);
         }
         cb(output);
     }
 
     clean (data) {
-        data.trim()
+        data.trim();
         return data.replace(this.regexComment, " ");
     }
-}
+};
